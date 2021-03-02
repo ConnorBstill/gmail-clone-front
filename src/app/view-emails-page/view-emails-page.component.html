@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let email of emails">
+    {{ email.sentFrom }}
+    {{ email.subject }}
+    {{ email.body | slice:0:50 }}
+  </div>
+</div>
